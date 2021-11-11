@@ -1,0 +1,292 @@
+.repositories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repositories-content {
+    padding-right: 0 !important;
+}
+
+.repositories-table-header, .repositories .header .top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.body-repo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 11px;
+    flex: 1;
+    height: 40px;
+    background-color: #e3eae5;
+}
+
+.body-repo .repo-num, .repositories .bottom .repo-num {
+    flex: 0 0 50px;
+    text-align: center;
+}
+
+.body-repo .repo-name {
+    flex: 1;
+    align-items: center;
+    display: flex;
+}
+
+.body-repo .repo-commits {
+    display: flex;
+    align-items: center;
+    flex: 0 1 100px;
+    padding-right: 10px;
+}
+
+.body-repo .repo-team {
+    flex: 0 1 60px;
+}
+
+.body-repo .repo-lang {
+    display: flex;
+    flex: 0 1 100px;
+}
+
+.body-repo .repo-timeline {
+    display: flex;
+    flex: 0 0 95px;
+    height: 75%;
+}
+
+.repo-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40px;
+    height: 40px;
+    background-color: #e3eae5;
+}
+
+.repositories {
+    border-top: 1px solid #fff;
+}
+
+.repositories .header {
+    cursor: pointer;
+}
+
+.repositories * {
+    font-size: 11px;
+}
+
+.repositories:nth-child(odd) .header .body-repo, .repositories:nth-child(odd) .header .repo-arrow, .repositories:nth-child(odd) .header .bottom, .repositories:nth-child(odd) .repo-content .content {
+    background-color: #f0f4f1;
+}
+
+.repositories:nth-child(even) .header .body-repo, .repositories:nth-child(even) .header .repo-arrow, .repositories:nth-child(even) .header .bottom, .repositories:nth-child(even) .repo-content .content {
+    background-color: #e3eae5;
+}
+
+.repositories .repo-name .name, .repo-url .name {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.repo-commits .commit-number {
+    min-width: 30px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.repo-commits .commit-chart {
+    position: relative;
+    flex: 1;
+}
+
+.repo-commits .commit-chart .line-holder {
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+
+.repo-commits .commit-chart .line-holder:first-child {
+    margin-bottom: 1px;
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+
+.repo-commits .commit-chart .line-holder .color-line.primary {
+    background-color: #00e7aa;
+}
+
+.repo-commits .commit-chart .line-holder .color-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #cacaca;
+}
+
+.repo-lang span:first-child {
+    padding-right: 10px;
+}
+
+.repo-lang .widget-circle, .repo-techs .items .item .widget-circle {
+    width: 15px;
+    height: 15px;
+    min-height: 15px;
+    max-height: 15px;
+    min-width: 15px;
+    max-width: 15px;
+    background: rgb(130, 193, 63);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repo-timeline .chart-holder {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.repositories .bottom.subrow {
+    padding-right: 20px;
+    min-height: 25px;
+    height: 25px;
+}
+
+.repositories .subrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.repositories .repo-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.repositories .repo-content .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.repositories .repo-content .content div > {
+    max-width: 100%;
+}
+
+.repositories .repo-content .content .repo-url {
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.github-icon svg, .check-icon svg {
+    font-size: 15px;
+}
+
+.repositories .repo-content .content .repo-techs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.repositories .repo-content .content .repo-techs .items {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+}
+
+.repositories .repo-content .content .repo-techs .items .item {
+    display: flex;
+    flex-direction: row;
+    width: calc((100% - 50px) / 6);
+    min-width: calc((100% - 50px) / 6);
+    height: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    border: 3px solid transparent;
+    background-color: #e3eae5;
+}
+
+.repositories .repo-content .content .repo-techs .items .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.repositories .repo-content .content .repo-verify {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.repositories .repo-content .content .repo-verify .verify-text {
+    margin-left: 10px;
+}
+
+.repositories .repo-content .content .team-block {
+    margin-bottom: 15px;
+}
+
+.repositories .repo-content .content .team-block .list-holder {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.repositories .repo-content .content .team-block .list-holder .contributors-list {
+    display: flex;
+    max-width: 100%;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    flex: 1;
+    transition: all 1s;
+    scroll-behavior: smooth;
+}
+
+.repositories .repo-content .content .team-block .list-holder .contributors-list .contributors-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 5px;
+    width: calc((100% - 0) / 5.5 * 1);
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.repositories .repo-content .content .team-block .list-holder .contributors-list .contributors-list-item > * {
+    z-index: 10;
+}
+
+.repositories .repo-content .content .team-block .list-holder .contributors-list .contributors-list-item .user-part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.repositories .repo-content .content .team-block .list-holder .contributors-list .contributors-list-item .user-part span {
+    font-weight: bold;
+}
+
+.repositories.collapsed {
+    margin: 10px 0;
+}
+
