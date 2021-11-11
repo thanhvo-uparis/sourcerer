@@ -1,0 +1,166 @@
+.fun-fact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fun-fact-container .date-chart {
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.fun-fact-container .date-chart .item {
+    width: 50%;
+    height: 250px;
+    padding: 10px;
+}
+
+.fun-fact-container .date-chart .item:nth-child(odd) {
+    background-color: #f0f4f1;
+}
+
+.fun-fact-container .date-chart .item:nth-child(even) {
+    background-color: #e3eae5;
+    margin-left: 10px;
+}
+
+.chart-title .title p {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.chart-title .title h6 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.chart-title .pie-chart {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.chart-title .pie-chart p {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.chart-title .pie-chart .ant-progress-inner {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.chart-title .pie-chart .ant-progress-inner path:nth-child(1) {
+    stroke: #bfc4c0;
+    stroke-width: 20;
+}
+
+.chart-title .pie-chart .ant-progress-inner path:nth-child(2) {
+    stroke: #00e7aa;
+    stroke-width: 20;
+}
+
+.chart-title .pie-chart .ant-progress-inner .ant-progress-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.fun-fact-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 12px !important;
+    padding-left: 12px;
+}
+
+.fun-fact-content .fun-fact-item {
+    width: calc(758px / 4);
+    height: 255px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.fun-fact-content .fun-fact-item:not(:first-child):not(:last-child) {
+    margin-left: 10px;
+}
+
+.fun-fact-content .fun-fact-item:nth-child(odd) {
+    background-color: #f0f4f1;
+}
+
+.fun-fact-content .fun-fact-item:nth-child(even) {
+    background-color: #e3eae5;
+}
+
+.fun-fact-content .fun-fact-item .item-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.fun-fact-content .fun-fact-item .item-chart .ant-progress-inner {
+    width: 115px !important;
+    height: 115px !important;
+    background-color: #fff;
+}
+
+.fun-fact-content .fun-fact-item .item-chart .ant-progress-inner path:nth-child(1) {
+    stroke: #cd7f32;
+    opacity: .3;
+}
+
+.fun-fact-content .fun-fact-item .item-chart .ant-progress-inner path:nth-child(2) {
+    stroke: #cd7f32;
+    stroke-dashoffset: 22.56;
+}
+
+.fun-fact-content .fun-fact-item .item-chart .ant-progress-inner .ant-progress-text img {
+    width: 50%;
+    filter: invert(47%) sepia(83%) saturate(393%) hue-rotate(
+            348deg) brightness(98%) contrast(94%);
+}
+
+.fun-fact-content .fun-fact-item .item-desc {
+    display: flex;
+}
+
+.fun-fact-content .fun-fact-item .item-desc .desc {
+    font-size: 11px;
+}
+
+.ant-popover-inner-content {
+    font-size: 11px;
+}
+
+.popover-tooltip {
+    width: 120px;
+    display: block !important;
+}
+
+.popover-tooltip div {
+    font-size: 11px !important;
+    text-align: left;
+    background-color: #fff;
+    color: #555555;
+}
+
+.tooltip.show {
+    opacity: 1 !important;
+}
+
+.popover-tooltip .tooltip-arrow {
+    background-color: transparent !important;
+}
+
+.popover-tooltip .tooltip-inner {
+    border-radius: unset !important;
+}
+
+.popover-tooltip .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #fff !important;
+}
