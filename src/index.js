@@ -1,7 +1,6 @@
 import React from 'react';
-import UserInfos from './components/UserInfos/UserInfos';
-import Query from './query/Query';
 import { render } from 'react-dom';
+import Schema from './schema/schema';
 import {
   ApolloClient,
   InMemoryCache,
@@ -12,7 +11,7 @@ import {
 
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
-  headers: { authorization: "bearer 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"},
+  headers: { authorization: "bearer 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"},
   cache: new InMemoryCache()
 });
 
