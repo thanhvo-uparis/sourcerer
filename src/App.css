@@ -1,38 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    color: #555555;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.component-width {
+    max-width: 800px !important;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.number-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 5px solid transparent;
+    background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(white, white),
+    linear-gradient(30deg, #00ce97 36%, transparent),
+    linear-gradient(120deg, #00e7aa 36%, transparent),
+    linear-gradient(300deg, #53BCE4 36%, transparent),
+    linear-gradient(210deg, #E94F2D 36%, transparent),
+    linear-gradient(210deg, #563D7C 36%, transparent),
+    linear-gradient(210deg, #F9D542 36%, transparent),
+    linear-gradient(210deg, #E55633 36%, transparent);
+    background-position: center center, left top, right top, left bottom, right bottom;
+    background-origin: content-box, border-box, border-box, border-box, border-box;
+    background-clip: content-box, border-box, border-box, border-box, border-box;
 }
