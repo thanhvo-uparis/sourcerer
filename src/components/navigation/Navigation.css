@@ -1,0 +1,82 @@
+.header-container {
+  background-color: #f0f4f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  position: relative;
+  min-height: 160px;
+  height: 100%;
+}
+
+.header-content .header-title {
+  padding-top: 30px;
+  height: calc(160px - 50px);
+  position: relative;
+}
+
+.header-title .header-title-name h1 {
+  font-size: 32px;
+}
+
+.header-title .header-title-name p {
+  font-size: 11px;
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.header-title .header-title-detail p {
+  margin-bottom: 0;
+  font-size: 11px;
+}
+
+.header-title .header-title-detail a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #555555;
+}
+
+.header-content .header-item {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: -50px;
+  display: flex;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-item .item {
+  padding: 10px;
+  min-width: 100px;
+  height: 50px;
+  background-color: #e3eae5;
+}
+
+.header-item .item p {
+  margin-bottom: 0;
+  font-size: 11px;
+}
+
+.header-item .item p:last-child {
+  font-weight: bold;
+}
+
+.header-item .btn-custom {
+  outline: none;
+  border: none;
+  border-radius: unset;
+  font-size: 11px;
+  color: #000000;
+  background-color: #00e7aa;
+}
+
+.header-item .btn-custom:hover {
+  background-color: #00ce97;
+  color: #000000;
+}
