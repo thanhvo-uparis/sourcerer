@@ -9,7 +9,7 @@ import {
 
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
-  headers: { authorization: "bearer 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"},
+  headers: { authorization: "bearer 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"},
   cache: new InMemoryCache()
 });
 

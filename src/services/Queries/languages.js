@@ -3,7 +3,7 @@ import { gql } from '@apollo/client';
 export const GET_LANG = gql`
     query {
         viewer {
-            repository(name: "sourcerer2") {
+            repository(name: "sourcerer") {
                 languages(first: 10) {
                     totalCount
                     totalSize
