@@ -16,12 +16,8 @@
 
 ## <a name='install'>🦊 Install</a>
 
-Hi, here are some rules to carry out this story oav;
+Welcome to my app, using `React` `GraphQL` `Github API` and `chartjs` `ant design` to create the chart.
 
-* You **MUST** create a git repository named `sourcerer`
-* You **MUST** create a file called `.author.json` with your fullname
-
-```sh
 * `npm install`
 
 * `npm install --save react-chartjs-2 chart.js`
@@ -37,7 +33,6 @@ Hi, here are some rules to carry out this story oav;
 
 * `npm install recharts`
 [recharts](https://github.com/recharts/recharts)
-```
 
 ## <a name='overview'>🐱 Overview</a>
 
