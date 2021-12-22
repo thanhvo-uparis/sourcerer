@@ -7,8 +7,8 @@
 ## <a name='TOC'>🐼 Summary</a>
 
 * [Install](#install)
-* [Overview](#overview)
 * [Story](#story)
+* [Overview](#overview)
 * [Postlude](#postlude)
 * [Resources](#resources)
 * [Credits](#credits)
@@ -33,14 +33,13 @@ Welcome to my app, using `React` `GraphQL` `Github API` and `chartjs` `ant desig
 
 * `npm install recharts`
 [recharts](https://github.com/recharts/recharts)
-
-## <a name='overview'>🐱 Overview</a>
-
-This project is about visual profile for software engineer<br />
-
-You **HAVE TO** use [Apollo Client](https://www.apollographql.com/docs/react).
-
+                                         
 ## <a name='story'>🐨 Story</a>
+
+### = Product
+
+This is my product ;<br />
+![](./sourcerer.product.png)
 
 ### = Prelude
 
@@ -51,10 +50,11 @@ The website first usecase is to simply consume Github API to display data.
 
 You **MUST** do the same by using **GraphQL Github API** available [here](https://developer.github.com/v4/)
 
-### = Features
+## <a name='overview'>🐱 Overview</a>
 
-Take a look at the screen below ;<br />
-![](./sourcerer.majdi.png)
+This project is about visual profile for software engineer<br />
+
+You **HAVE TO** use [Apollo Client](https://www.apollographql.com/docs/react).
 
 ## <a name='resources'> Resources </a>
 [learn-graphql](https://graphql.org/learn/)
